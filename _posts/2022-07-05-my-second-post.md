@@ -1,5 +1,5 @@
 ---
-title:  "[3주차] - 2일차"
+title:  "[3주차] 알찬 하루 - 2일차"
 excerpt: " "
 
 categories:
