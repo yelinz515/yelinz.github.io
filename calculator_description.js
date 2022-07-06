@@ -140,13 +140,15 @@ buttons.addEventListener('click', function (event) {
 
     if (action === 'calculate') {
       if (firstNum) { //firstNum === true
-        if (previousKey === 'calculate') { // 이전키가 enter이면  
-          //연산자에 따라 현재 보이지는 숫자와 previousNum(secondNum)을 계산 
+        if (previousKey === 'calculate') { // 이전키가 enter이면(연속으로 누른 경우) 
+          //누른 연산자에 따라
+          //현재 보이지는 숫자(n1 + operator + n2의 결과값)와 직전숫자(148번코드) 계산 
           display.textContent = calculate(display.textContent, operatorForAdvanced, previousNum);
-        } else { // 이전키가 enter가 아니면 
-          previousNum = display.textContent; //지금 보이는 화면에 숫자가 previousNum이다.
+        } else { // 이전키가 enter가 아니면 (처음 누르는 경우)
+          previousNum = display.textContent; //지금 보이는 화면에 숫자(secoundNum)가 previousNum이다.
           // console.log(previousNum + '여기'); // 9+ 8 = 17 enter 누를 때 '8여기'가 나온다.
-          //연산자에 따라 첫번째 숫자와 현재 보이지는 숫자 계산해서 화면에 보이게 한다. 
+          //연산자에 따라 
+          //첫번째 숫자와 현재 보이지는 숫자 계산해서 화면에 보이게 한다. 
           display.textContent = calculate(firstNum, operatorForAdvanced, display.textContent);
         }
       }
