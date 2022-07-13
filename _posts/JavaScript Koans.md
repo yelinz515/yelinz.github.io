@@ -58,7 +58,7 @@ console.log(typeof funExpressed) // 'string'
 자바스크립트는 함수가 호출되는 환경와 별개로, 기존에 선언되어 있던 환경 - 어휘적 환경 - 을 기준으로 변수를 조회하려고 함.
 
 #
-##05_ArrowFunction.js
+## 05_ArrowFunction.js
 
 ✨ 화살표 함수 사용법
 * function 키워드를 생략하고 화살표 => 를 붙인다.
