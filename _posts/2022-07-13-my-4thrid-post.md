@@ -16,48 +16,147 @@ last_modified_at: 2022-07-13
 
 
 ## ✨ 스코프
+> : **변수 접근 규칙에 따른 유효 범위**
 
 ```JavaScript
-string, number, bigInt, boolean, undefined, symbol, (null)
+let greeting = 'Hello';
+function greetSomeone() {
+  let firstName = 'Josh';
+  return greeting + ' ' + firstName;
+}
+console.log(firstName)
+```
+1. firstName 변수가 함수 안쪽 정의 :arrow_right: 함수 바깥쪽에서 firstName으로 접근 불가능 (=ReferenceError)
+
+:white_check_mark: 바깥쪽 스코프에서 선언한 변수는 안쪽 스코프에서 사용 가능
+
+:white_check_mark: 안쪽에서 선언한 변수는 바깥쪽 스포크에서 사용 불가능
+
+2. 중첩 가능
+"지역 변수는 전역 변수보다 더 높은 우선순위를 가진다"
+
+```JavaScript
+let name = '김코딩';
+
+function showName() {
+  let name = '박해커';
+  console.log(name); // 2 '박해커'
+}
+
+console.log(name); // 1 '김코딩'
+showName();
+console.log(name); // 3 '김코딩'
 ```
 
-* 데이터의 크기와는 관계없이 변수에는  **하나**의 데이터만 담습니다.
+:two: 출력에서 '김코딩'이 나오는 이유는 지역 name 변수를 새로 선언했기 때문에 전역에 있는 name 변수와는 다르다.
+
+만약,
+```JavaScript
+let name = '김코딩';
+
+function showName() {
+  name = '박해커';
+  console.log(name); // 2 '박해커'
+}
+
+console.log(name);// 1 '김코딩'
+showName();
+console.log(name);// 3 '박해커'
+```
+지역 name 변수를 새로 선언하지 않았다면 전역 name 변수와 같은 변수이기 때문에 '김코딩' 에서 '박해커'로 변경된다.
+따라서, :three: 출력은 '박해커'가 된다.
+
+## ✨ 스코프의 종류
+> : **블록 스코프, 함수 스코프**
+
+:ghost: 화살표 함수는 블록 스코프로 취급된다.
+
+:ghost: **var키워드**_
+블록 스코프에서 block 범위를 벗어나도 같은 function scope에서는 사용이 가능하다.
+따라서, var 보다는 let 으로 변수 선언을 하는 것을 권장한다.
 
 ##
 
 ## ✨ 클로저
+> : **함수를 리턴하는 함수**
 ```JavaScript
-배열 (Array()), 객체 (Object), 함수 (function)
+const adder = function (x) {
+  return function (y) {
+    return x + y;
+  }
+}
 ```
- * 변수에 값이 아닌 주소를 저장합니다.
-* 주소를 따라가 보면 특별한 데이터 보관함을 찾을 수 있고, 사이즈가 **동적**으로 변할 수 있습니다. (= **heap**)
+:white_check_mark: 내부 함수는 외부 함수에 선언된 변수에 접근 가능
+
+:white_check_mark:클로저는 **모듈화**에 유리
 
 ##
 
 ## ✨ ES6 신규 문법
 
+### 1.1. spread 문법
+주로 배열을 풀어서 인자로 전달 or 배열을 풀어서 각각의 요소로 넣을 때 사용
+
 ```JavaScript
-string, number, bigInt, boolean, undefined, symbol, (null)
+function sum(x, y, z) {
+  return x + y + z;
+}
+
+const numbers = [1, 2, 3];
+
+sum(...numbers) // spread 문법
 ```
 
-* 데이터의 크기와는 관계없이 변수에는  **하나**의 데이터만 담습니다.
+### 1.2. rest 문법
+파라미터를 배열의 형태로 받아서 사용 (파라미터 개수가 가변적일 때 유용!)
+
+```JavaScript
+function sum(...theArgs) { // rest 문법
+  return theArgs.reduce((previous, current) => {
+    return previous + current;
+  });
+}
+```
+
+##
+### 2. 구조분해할당
+> : spread 문법을 이용하여 값을 해체 -> 개별 값을 변수에 새로 할당
+
+```JavaScript
+let arr = ['code', 'states']
+let value = [
+  ...arr,
+  'pre',
+  ...['course', 'student']
+]
+
+console.log(value)
+```
+...arr처럼 spread 문법을 이용해 값을 해체한다.
+...['course', 'student']도 마찬가지이다.
+
+결과적으로, 아래와 같은 값이 나오게 된다.
+```JavaScript
+['code', 'states', 'pre', 'course', 'student']
+```
 
 ##
 
-## ✨ JavaScript Koans
-
-```JavaScript
-string, number, bigInt, boolean, undefined, symbol, (null)
-```
-
-* 데이터의 크기와는 관계없이 변수에는  **하나**의 데이터만 담습니다.
-
-#
+✨ JavaScript Koans에 대해서는 다른 포스트에 정리해두겠습니다.
+##
 
 > **정리**
 
-:heavy_check_mark: 원시 자료형 : 각 변수 간의 원시 타입 데이터를 복사할 경우, 데이터 값이 복사되기 때문에 **기존의 데이터에 영향이 가지 않는다.**
-#### 
-:heavy_check_mark: 참조 자료형 : 주소를 복사하기 때문에 복사한 데이터에서 원소를 변경하면 주소 안의 데이터가 변경된다. 따라서, **기존의 데이터에 영향이 간다.**
+:heavy_check_mark: 스코프의 의미와 적용 범위를 이해한다.
+
+:heavy_check_mark: 스코프의 주요 규칙을 이해한다.
+
+:heavy_check_mark: 전역 스코프와 지역 스코프의 차이를 이해한다.
+
+:heavy_check_mark: 클로저 함수의 정의와 특징에 대해서 이해할 수 있다.
+
+:heavy_check_mark: spread/rest 문법을 사용할 수 있다.
+
+:heavy_check_mark: 구조 분해 할당을 사용할 수 있다.
 
 👍👍👍
