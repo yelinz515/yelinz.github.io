@@ -132,9 +132,18 @@ document.querySelector('#apply').onclick = displayAlert // displayAlert() O
 ```
 ```
 let aElement = document.createElement('a')
-aElement.setAttribute('id', 'javascript')
+aElement.setAttribute('id', 'javascript') 
 aElement.textContent = 'awesome'
 ```
+여기서 
+```
+setAttribute(name, value)
+```
+name: 값을 설정할 속성의 이름을 지정
+value: 속성에 할당할 값
+
+그래서 id가 javascript라는 뜻이다.
+
 <보기>
 ```
 // 오답
