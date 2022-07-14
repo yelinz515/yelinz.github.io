@@ -2,6 +2,8 @@
 title:  "JavaScript Koans"
 excerpt: "풀었던 고정과 새롭게 알게 된 것"
 
+image:  06.jpg
+
 categories:
   - Blog
 tags:
