@@ -143,10 +143,8 @@ name: 값을 설정할 속성의 이름을 지정
 value: 속성에 할당할 값
 
 그래서 id가 javascript라는 뜻이다.
-
-<보기>
-
-###
+##
+> 보기
 
 ```h
 //오답
@@ -181,8 +179,8 @@ E. document.querySelector("#world").removeChild(aElement) //world 엘리먼트�
   </div>
 </body>
 ```
-
-<보기>
+##
+> 보기
 
 ```
 // 오답
