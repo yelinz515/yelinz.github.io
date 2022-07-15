@@ -114,7 +114,7 @@ function displayAlert() {
 }
 document.querySelector('#apply').onclick = displayAlert() // displayAlert() X
 ```
-:no_entry_sign: 함수를 할당할 시에 함수의 실행 값을 할당하면 안됩니다.
+⚠️ 함수를 할당할 시에 함수의 실행 값을 할당하면 안됩니다.
 
 ```JavaScript
 function displayAlert() {
