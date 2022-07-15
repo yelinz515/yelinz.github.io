@@ -146,9 +146,9 @@ value: 속성에 할당할 값
 
 <보기>
 
-```
-// 오답
+오답 먼저 살펴보면
 
+```
 A. document.deleteNode(aElement) //deleteNode라는 메서드 없음
 
 //C와 D는 world 엘리먼트를 전부 지움
