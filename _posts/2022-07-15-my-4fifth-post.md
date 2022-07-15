@@ -17,4 +17,6 @@ last_modified_at: 2022-07-15
 # 유효성 검사
 ***
 
-# Write.
+# 유효성 검사 과제 실습
+
+![]({{ site.baseurl }}/images/valida.gif)
