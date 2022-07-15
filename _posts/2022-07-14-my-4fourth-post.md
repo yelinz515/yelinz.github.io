@@ -145,6 +145,7 @@ value: 속성에 할당할 값
 그래서 id가 javascript라는 뜻이다.
 
 <보기>
+
 ```
 // 오답
 
@@ -156,6 +157,7 @@ D. document.querySelector("#world").remove(aElement)
 ```
 
 정답은..
+
 ```
 B. aElement.remove() //aElement 제거
 E. document.querySelector("#world").removeChild(aElement) //world 엘리먼트의 자식 요소인 aElement 제거
@@ -178,6 +180,7 @@ E. document.querySelector("#world").removeChild(aElement) //world 엘리먼트�
   </div>
 </body>
 ```
+
 <보기>
 
 ```
@@ -186,7 +189,9 @@ A. document.querySelector('div') // 최상단 <div>요소 하나만 조회
 C. document.getElementById('div') // id가 <div>요소 하나를 조회
 E. document.getElementsByClassName('div') // class가 <div>요소 여러 개를 조회합니다.
 ```
+
 정답은..
+
 ```
 B. document.getElementsByTagName('div') // tag가 <div>요소 여러 개를 조회합니다.
 D. document.querySelectorAll('div') // <div>요소 모두 조회
@@ -195,8 +200,10 @@ D. document.querySelectorAll('div') // <div>요소 모두 조회
 ##
 
 > 그렇다면..
+
 ```
 ✨ Q. 위 HTML에서 <div>요소를 조회하였다면, 조회한 <div> 개수는?
 ```
+
 **부모, 자식 관계와 관계 없이** 모든 div 요소를 선택하기 때문에 총 3개이다.
 
