@@ -14,7 +14,7 @@ date: 2022-07-15
 last_modified_at: 2022-07-15
 ---
 
-# :ballot_box_with_check: 유효성 검사
+# ☑️ 유효성 검사
 
 * 오늘 공부한 내용
 * 어려웠던 내용
