@@ -20,7 +20,7 @@ last_modified_at: 2022-07-19
 * 어려웠던 내용
 * 궁금한 내용과 부족한 내용 
 * 느낀점
-***
+---
 
 # ✨  오늘 공부한 내용
 
@@ -64,6 +64,7 @@ if (dataFromLocalStorage) {
   // 로컬스토리지에 저장
   localStorage.setItem("agoraStatesDiscussions", JSON.stringify(data));
 ```
+##
 
 ### 페이지네이션 구현 코드
 ```js
