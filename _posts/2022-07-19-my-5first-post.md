@@ -45,11 +45,11 @@ new Date().toLocaleString()
 ```
 위와 같은 코드를 작성해주면 댓글을 submit 했을 떄 현재시간으로 댓글이 등록되는 것을 볼 수 있다.👍 
 
-![]({{ site.baseurl }}/images/myagora.gif)
+![]({{ site.baseurl }}/images/myagora.PNG)
 
 ✅ 페이지네이션과 로컬스토리지 구현
 
-![]({{ site.baseurl }}/images/myagora2.gif)
+![]({{ site.baseurl }}/images/myagora2.PNG)
 
 ### 로컬스토리지 코드
 ```js
