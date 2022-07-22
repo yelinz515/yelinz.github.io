@@ -1,6 +1,6 @@
 ---
 title:  "[5주차] [JavaScript] 고차 함수 - 4일차"
-excerpt: "Sectopm 2의 시작"
+excerpt: "Section2의 시작"
 
 categories:
   - Blog
@@ -94,6 +94,10 @@ for (variable of iterable) {
 
 내장 고차 함수 대표 3가지인 filter, map, reduce를 자주 연습해야겠다.
 하다보면 익숙해질 것이다.
+
+(종합퀴즈 4,8번 오답노트 작성하기!)
+
+✅ 4.
 
 #
 
