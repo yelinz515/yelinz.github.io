@@ -9,7 +9,7 @@ description: Zolan is modern minimal theme for Jekyll
 # Author Settings
 author:
   name: Yelinz515 # 변경 가능한데,,오류남
-  image: 01.jpg
+  image: 01.jpg # 사진 없애기
   say-hello: Hello, I’m <strong>Yerin Kim</strong>
   bio: Designs, talks, and writes about <strong>web</strong>, <strong>ethics</strong>, <strong>privacy</strong>, and dev. I share design tutorials, free resources and inspiration. Loves <a href="#">music</a> & riding his bicycle.
 

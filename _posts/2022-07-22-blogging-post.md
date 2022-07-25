@@ -159,7 +159,7 @@ class Human {
   }
 }
 ```
-Human을 출력했을 때와 동일한 결과를 얻을 수 있다.
+Human.prototype.constructor === Human;을 출력했을 때와 동일한 결과를 얻을 수 있다.
 
 ```js
 class Human {
@@ -178,13 +178,13 @@ let kimcoding = new Human('김코딩', 30);
 
 위 코드를 보면  Human 클래스의 인스턴스인 kimcoding을 볼 수 있다.
 
-* Human.__ proto __ : 개체가 인스턴스화될때 프로토타입으로 사용된 개체를 가리킨다.
+* Kimcoding.__ proto __ : 개체가 인스턴스화될때 프로토타입으로 사용된 개체를 가리킨다.
 
-Human.prototype을 출력했을 때와 동일한 결과를 얻을 수 있다.
+Human.prototype === kimcoding.__ proto __; 을 출력했을 때와 동일한 결과를 얻을 수 있다.
 
 ## ✔️ .__ proto __
 
-> 접근하고자 하는 객체의 내부 속성인 [ [ Prototype ] ](객체 또는 null)를 노출하는 접근자 속성(getter 및 setter 함수)이다.
+> 접근하고자 하는 객체의 내부 속성인 [  [ Prototype ]  ](객체 또는 null)를 노출하는 접근자 속성(getter 및 setter 함수)이다.
 
 __ proto __ 속성은 getter 및 setter 함수로 구성된 Object.prototype (en-US)의 간단한 접근자 속성이다.
 

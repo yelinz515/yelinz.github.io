@@ -86,7 +86,7 @@ for (variable of iterable) {
 고차 함수 코플릿 몇 문제가 어려웠다.
 
 ### ✅ 오답노트
-(주말에 스스로 풀어서 오답노트 작성하기!)
+(스스로 풀어서 오답노트 작성하기!)
 
 #
 
@@ -98,6 +98,39 @@ for (variable of iterable) {
 (종합퀴즈 4,8번 오답노트 작성하기!)
 
 ✅ 4.
+
+```js
+function calcuate(x, y, z){
+	const plus = function (num1, num2){
+		return num1 + num2;
+	}
+	return plus(x, y) * z
+}
+```
+위 코드는 함수를 전달인자로 받지 않고 있고, 함수를 리턴하고 있지 않아서 고차함수가 아니다.
+
+```js
+function calculate(x, y){
+	return function(){
+		return x * y;
+	}
+} 
+```
+위 코드처럼 함수를 전달인자로 받지 않아도 함수를 리턴하기 때문에 고차함수이다.
+
+✅ 8.
+
+```js
+const summary = function (acc, cur) {
+return acc + cur + ' ';
+};
+
+const contents = ['미들웨어를 통해 강력한 API를 작성할 수 있다.', 'HTTP 유틸리티 메소드를 제공한다.', 'NestJs는 Express 기반이다.', 'Express는 OpenJS 기반의 프로젝트이다.'];
+let output = contents.reduce(summary);
+console.log(output);
+```
+
+지금 reduce 메서드를 통해 함수를 접근하고 있는데, 두 번째 전달인자에 초기값이 주어지지 않아 배열 contents의 첫 번째 요쇼인 '미들웨어를 통해 강력한 API를 작성할 수 있다.' 가 리턴된다.
 
 #
 
