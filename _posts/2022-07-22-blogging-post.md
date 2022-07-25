@@ -1,5 +1,5 @@
 ---
-title:  "[5주차] [JavaScript] TODAY 블로깅 - 5일차"
+title:  "[6주차] [JavaScript] 프로토타입 체인 - 1일차"
 excerpt: " "
 
 categories:
@@ -10,8 +10,8 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2022-07-22
-last_modified_at: 2022-07-22
+date: 2022-07-25
+last_modified_at: 2022-07-25
 ---
 
 # 객체 지향 개요
