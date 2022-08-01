@@ -1,5 +1,5 @@
 ---
-title:  "[7주차] React Intro - 1일차"
+title:  "[7주차] React SPA - 1일차"
 excerpt: " "
 
 categories:
