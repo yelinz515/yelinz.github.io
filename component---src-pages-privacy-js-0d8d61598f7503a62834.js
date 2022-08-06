@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkyerin=self.webpackChunkyerin||[]).push([[844],{8897:function(e,n,t){t.r(n),t.d(n,{default:function(){return l}});var r=t(7294),c=t(5761);function l(){return r.createElement(r.Fragment,null,r.createElement(c.pQ,{title:"Privacy Policy",useTitleTemplate:!0,noIndex:!0}),r.createElement(c.T3,null,r.createElement(c.Ek,{sectionId:"privacy",heading:"Privacy Policy"})))}}}]);
+//# sourceMappingURL=component---src-pages-privacy-js-0d8d61598f7503a62834.js.map
