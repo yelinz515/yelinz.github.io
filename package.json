@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-portfolio-minimal-theme",
+  "name": "yerin Kim",
   "version": "1.0.0",
-  "description": "A Gatsby Starter Project to easily get started with the Portfolio Minimal Theme.",
+  "description": "This is my blog.",
   "scripts": {
     "clean": "gatsby clean",
     "develop": "gatsby develop",
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme.git"
+    "url": "https://github.com/yelinz515/yelinz515.github.io.git"
   },
   "bugs": {
     "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme/issues"
