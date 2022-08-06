@@ -1,5 +1,5 @@
 {
-  "name": "yerin Kim",
+  "name": "yerin",
   "version": "1.0.0",
   "description": "This is my blog.",
   "scripts": {
@@ -21,7 +21,7 @@
   "author": "Konstantin Münster <mail@konstantin.digital>",
   "license": "0BSD",
   "starter-name": "gatsby-starter-portfolio-minimal-theme",
-  "homepage": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme#readme",
+  "homepage": "https://yelinz515.github.io/yelinz515.github.io",
   "repository": {
     "type": "git",
     "url": "https://github.com/yelinz515/yelinz515.github.io.git"
@@ -40,5 +40,8 @@
     "animations",
     "dark-mode",
     "gdpr-compliant"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
